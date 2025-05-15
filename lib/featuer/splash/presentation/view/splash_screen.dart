@@ -3,6 +3,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tcp/core/util/app_router.dart';
+import 'package:tcp/core/util/images_gen.dart';
 import 'package:tcp/core/util/style.dart';
 
 class SplashSreen extends StatefulWidget {
@@ -19,7 +20,7 @@ class _SplashSreenState extends State<SplashSreen> {
 
     Future.delayed(const Duration(seconds: 4), () {
       // ignore: use_build_context_synchronously
-      context.goNamed(AppRoutes.onBoarding);
+      // context.goNamed(AppRoutes.onBoarding);
     });
   }
 
@@ -34,7 +35,7 @@ class _SplashSreenState extends State<SplashSreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/images/LogoTPC.PNG',
+              Assets.imagesLogoTPCRemovebgPreview,
               width: 200.w,
               height: 200.w,
             )
