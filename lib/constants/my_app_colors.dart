@@ -1,4 +1,4 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 class MyAppColors {
   static Color kPrimary = const Color(0XFF1460F2);
@@ -7,6 +7,7 @@ class MyAppColors {
   static Color kGrayscaleDark100 = const Color(0XFF1C1C1E);
   static Color kLine = const Color(0XFFEBEBEB);
   static Color kBackground2 = const Color(0XFFF6F6F6);
-    static Color kOnBoardingColor = const Color(0XFFFEFEFE);
+  static Color kOnBoardingColor = const Color(0XFFFEFEFE);
   static Color kGrayscale40 = const Color(0XFFAEAEB2);
+  static Color korange = Colors.orange;
 }

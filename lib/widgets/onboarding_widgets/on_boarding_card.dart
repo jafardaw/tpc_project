@@ -19,4 +19,3 @@ class _OnBoardingCardState extends State<OnBoardingCard> {
     return Lottie.asset(widget.onBoardingModel.image);
   }
 }
-

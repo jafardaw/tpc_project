@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tcp/constants/my_app_colors.dart';
 
 class AppTextStyles {
   // Calibri font styles
@@ -36,14 +37,13 @@ class AppTextStyles {
   static TextStyle calibri14BoldBlueAccentUnderline = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.bold,
-    color: Colors.blueAccent,
-    decoration: TextDecoration.underline,
+    color: MyAppColors.kPrimary,
   );
   static TextStyle calibri22Splach = TextStyle(
     fontSize: 22.sp,
     fontWeight: FontWeight.bold,
-    color: const Color.fromARGB(255, 63, 66, 154),
-    letterSpacing: 2,
+    color: MyAppColors.kPrimary,
+    // letterSpacing: 2,
   );
 
   static TextStyle calibri15MediumBlack800 = TextStyle(
@@ -66,9 +66,9 @@ class AppTextStyles {
 
   // New Calibri styles
   static TextStyle calibri24BoldPrimary = TextStyle(
-    fontSize: 24.sp,
+    fontSize: 22.sp,
     fontWeight: FontWeight.bold,
-    color: Colors.blue,
+    color: MyAppColors.kPrimary,
   );
 
   static TextStyle calibri12LightGrey500 = TextStyle(
@@ -108,7 +108,7 @@ class AppTextStyles {
   static TextStyle roboto16MediumPrimary = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.w500,
-    color: Colors.blue,
+    color: MyAppColors.kPrimary,
   );
 
   static TextStyle roboto18BoldWhite = TextStyle(
@@ -120,7 +120,7 @@ class AppTextStyles {
   static TextStyle openSans12SemiBoldGrey600 = TextStyle(
     fontSize: 12.sp,
     fontWeight: FontWeight.w600,
-    color: Colors.grey[600],
+    color: Colors.grey[700],
   );
 
   static TextStyle openSans14RegularBlack = TextStyle(
@@ -142,11 +142,11 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
   );
 
-  static TextStyle linkTextStyle = TextStyle(
-    fontSize: 14.sp,
-    color: Colors.blue[700],
+  static TextStyle linkTextStyle16 = TextStyle(
+    fontSize: 16.sp,
+    color: MyAppColors.kPrimary,
     fontWeight: FontWeight.w500,
-    decoration: TextDecoration.underline,
+    // decoration: TextDecoration.underline,
   );
 
   static TextStyle buttonTextStyle = TextStyle(

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:go_router/go_router.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:tcp/core/util/app_router.dart';
 import 'package:tcp/core/util/images_gen.dart';
 import 'package:tcp/core/util/style.dart';
 

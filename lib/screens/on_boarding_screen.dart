@@ -4,8 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:tcp/constants/my_app_colors.dart';
 import 'package:tcp/constants/on_boarding.dart';
 import 'package:tcp/core/util/app_router.dart';
-import 'package:tcp/screens/register_screen.dart';
-import 'package:tcp/widgets/auth_widget/primary_button.dart';
+
 import 'package:tcp/widgets/onboarding_widgets/on_boarding_card.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 
@@ -81,7 +80,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       dotsCount: onBoardinglist.length,
                       position: _currentIndex,
                       decorator: DotsDecorator(
-                        color: MyAppColors.kPrimary.withOpacity(0.4),
+                        color: MyAppColors.kPrimary.withValues(alpha: 0.4),
                         size: Size.square(10.0.sp),
                         activeSize: Size(20.0.sp, 8.0.sp),
                         activeShape: RoundedRectangleBorder(

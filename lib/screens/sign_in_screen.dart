@@ -34,22 +34,23 @@ class SignInScreen extends StatelessWidget {
             Navigator.push(
                 context, MaterialPageRoute(builder: (context) => HomePage()));
           }
-           if(state is LoginError){
-              AwesomeDialog(
-            context: context,
-            dialogType: DialogType.error,
-            animType: AnimType.rightSlide,btnOkColor: MyAppColors.kPrimary,
-            title: 'Invalid credentials',
-            desc: state.error,
-            btnCancelOnPress: () {},
-            btnOkOnPress: () {},
+          if (state is LoginError) {
+            AwesomeDialog(
+              context: context,
+              dialogType: DialogType.error,
+              animType: AnimType.rightSlide,
+              btnOkColor: MyAppColors.kPrimary,
+              title: 'Invalid credentials',
+              desc: state.error,
+              btnCancelOnPress: () {},
+              btnOkOnPress: () {},
             ).show();
-            }
+          }
         },
         child: BlocBuilder<AuthCubit, AuthState>(
           builder: (context, state) {
             var c = context.read<AuthCubit>();
-           
+
             return Form(
               key: logInKey,
               child: SingleChildScrollView(
@@ -244,8 +245,8 @@ class SignInScreen extends StatelessWidget {
                                 width: 280.w,
                                 onTap: () {},
                                 borderRadius: 24.r,
-                                bgColor:
-                                    MyAppColors.kBackground.withOpacity(0.3),
+                                bgColor: MyAppColors.kBackground
+                                    .withValues(alpha: 0.3),
                                 text: 'Continue with Google',
                                 icons: "assets/images/googleSymbol.png"),
                           ],
